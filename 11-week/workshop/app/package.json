@@ -1,15 +1,14 @@
 {
-  "name": "catalogo-productos-ionic-react",
+  "name": "manicita-w11-workshop",
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "Starter v2 del parcial práctico C2 · Programación Móvil (CORHUILA) — Catálogo de productos: API Express + Ionic React + Kotlin",
+  "description": "Taller semana 11: pantallas Mis citas y Reservar una cita de ManiCita con Ionic React",
   "engines": {
     "node": ">=22.12.0"
   },
   "scripts": {
     "dev": "vite",
-    "server": "node server/index.js",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest run",

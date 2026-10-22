@@ -2,11 +2,10 @@ import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 
-import ProductDetailPage from '../features/products/presentation/ProductDetailPage';
-import ProductFormPage from '../features/products/presentation/ProductFormPage';
-import ProductListPage from '../features/products/presentation/ProductListPage';
+import MyAppointmentsPage from '../features/appointments/presentation/MyAppointmentsPage';
+import BookAppointmentPage from '../features/appointments/presentation/BookAppointmentPage';
+import AppointmentDetailPage from '../features/appointments/presentation/AppointmentDetailPage';
 
-/* CSS base de Ionic (obligatorio) */
 import '@ionic/react/css/core.css';
 import '@ionic/react/css/normalize.css';
 import '@ionic/react/css/structure.css';
@@ -14,23 +13,18 @@ import '@ionic/react/css/typography.css';
 import '@ionic/react/css/padding.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
-
-/* Tema de la aplicación */
 import './theme/variables.css';
+import '../features/appointments/presentation/appointments.css';
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route exact path="/productos" component={ProductListPage} />
-        <Route exact path="/productos/nuevo" component={ProductFormPage} />
-        {/* React Router v5 puede activar la ruta equivocada si dos patrones coinciden
-            (/productos/nuevo también encajaría con /productos/:id). Por eso :id se
-            restringe a dígitos y "nuevo" no lo activa. */}
-        <Route exact path="/productos/:id(\d+)" component={ProductDetailPage} />
-        <Route exact path="/productos/:id(\d+)/editar" component={ProductFormPage} />
+        <Route exact path="/mis-citas" component={MyAppointmentsPage} />
+        <Route exact path="/reservar" component={BookAppointmentPage} />
+        <Route exact path="/citas/:id" component={AppointmentDetailPage} />
         <Route exact path="/">
-          <Redirect to="/productos" />
+          <Redirect to="/mis-citas" />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
