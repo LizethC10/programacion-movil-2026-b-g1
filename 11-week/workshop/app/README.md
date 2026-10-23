@@ -105,3 +105,12 @@ Al terminar, agregue aquí abajo las dos secciones escritas en inglés (3 a 5 fr
 ---
 
 Las plantillas de `docs/` provienen del Mobile Governance Framework (licencia MIT; ver `docs/LICENSE-mobile-governance-framework.txt`).
+## Adaptación ManiCita para semana 11
+
+La interfaz de práctica de este taller adapta el starter Ionic React del curso a las pantallas Mis citas, Reservar una cita y Detalle de cita. El frontend original del equipo no estuvo disponible en este entorno. Para ejecutar esta adaptación, usa `npm install` y luego `npm run dev` desde esta carpeta. Los datos son de demostración en memoria y no se conectan a la API real.
+
+### Estado de las evidencias
+
+- CP8: las notas de dos participantes están en `evidence/CP8-usability-session.md`. Informaron que no tuvieron dificultades ni nuevas sugerencias; la solicitud quedó pendiente de confirmación del salón.
+- CP9: las capturas actuales de Mis citas y del detalle están en `evidence/`. No se contó con una captura anterior del frontend del equipo; las historias siguen pendientes de revisión con el equipo.
+- CP10: el plan personal está en el documento de reflexión de la estudiante.
